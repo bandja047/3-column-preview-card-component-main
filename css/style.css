@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca:wght@500&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray /*(background, headings, buttons)*/: hsl(0, 0%, 95%);
+    --font-size:15px;
+}
+* {
+    box-sizing: border-box;
+   
+  }
+
+.attribution { font-size: 24px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+#root{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+   
+}
+
+.car{
+   
+    padding: 50px;
+}
+
+.title{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    color: white;
+    
+}
+.card-sedans{
+    background-color: var(--bright-orange);
+}
+.card-suvs{
+    background-color: var(--dark-cyan);
+}
+.card-luxury{
+    background-color: var(--very-dark-cyan);
+}
+/*.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }*/
+
+  .text{
+    font-size: 15px;
+    color: var(--transparent-white-paragraphs);
+  }
+
+  .button a{
+      text-decoration: none;
+  }
+  .button{
+     
+      background-color: var(--very-light-gray);
+      width: 112px;
+      padding: 8px;
+      text-align: center;
+      border-radius: 20px;
+      margin-top:75px;
+  }
+
+ .btn-sedan {
+    border: 2px solid var(--bright-orange);
+    
+  }
+
+  .btn-sedans a{
+    color: var(--bright-orange);
+  }
+  .btn-suvs{
+    border-color:2px solid var(--dark-cyan);
+}
+ .btn-suvs a{
+     color: var(--dark-cyan);
+ }
+  .btn-luxury{
+    border: 2px solid var(--very-dark-cyan);
+  }
+  .btn-luxury a{
+   color: var(--very-dark-cyan);
+  }
+  
+  @media only screen and (max-width:600px) {
+   
+    .card{
+     
+        display: block;
+        overflow: scroll;
+        
+    }
+     
+  }
