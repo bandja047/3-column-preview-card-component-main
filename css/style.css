@@ -11,6 +11,8 @@
 }
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
    
   }
 
@@ -50,12 +52,16 @@
 }
 .card-sedans{
     background-color: var(--bright-orange);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 }
 .card-suvs{
     background-color: var(--dark-cyan);
 }
 .card-luxury{
     background-color: var(--very-dark-cyan);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 /*.clearfix::after {
     content: "";
@@ -70,6 +76,7 @@
 
   .button a{
       text-decoration: none;
+      width: 100%;
   }
   .button{
      
@@ -81,7 +88,27 @@
       margin-top:75px;
   }
 
- .btn-sedan {
+ .button.btn-sedans:hover{
+    background-color: var(--bright-orange);
+    border: 1px solid white;
+    color: white;
+  }
+
+  .button.btn-suvs:hover{
+    background-color: var(--dark-cyan);
+    border: 1px solid white;
+    color: white;
+  }
+
+  .button.btn-luxury:hover{
+    background-color: var(--very-dark-cyan);
+    border: 1px solid white;
+    color: white;
+  }
+  .button a:hover{
+      color:white;
+  }
+ .btn-sedans {
     border: 2px solid var(--bright-orange);
     
   }
@@ -109,6 +136,16 @@
         display: block;
         overflow: scroll;
         
+    }
+
+    .card-sedans{
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+
+    .card-luxury{
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
     }
      
   }
